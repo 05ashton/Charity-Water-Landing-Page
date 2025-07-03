@@ -1,6 +1,7 @@
-/* Set the default font for the whole website to Proxima Nova */
+/* Set the default font and background color for the whole website */
 body {
   font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
+  background-color: #FFF7E1; /* Set the background color for the whole page */
 }
 
 /* Header styles: yellow banner, logo left, donate button right */
@@ -112,6 +113,77 @@ body.loaded .hero-headline, body.loaded .hero-message {
   transform: translateY(0);
 }
 
+/* Impact subheading styles */
+.impact-subheading {
+  text-align: center; /* Center the 'Real Impact: Meet Amina' subheading */
+  margin: 24px 0 16px 0;
+  color: #003366;
+  font-size: 1.5em;
+  font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
+}
+
+/* Flex container for image and text */
+.impact-flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 800px;
+  margin: 0 auto 32px auto;
+  gap: 24px; /* Space between image and text */
+}
+
+.impact-image {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  background: #eee;
+}
+
+.impact-body {
+  flex: 1;
+  color: #1A1A1A;
+  font-size: 1.2em;
+  text-align: left;
+  font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
+}
+
+/* Centered heading and subheading for call to action */
+.difference-title {
+  color: #ffc907;
+  font-size: 2.2em;
+  margin: 32px 0 8px 0;
+  font-family: 'Montserrat', 'Proxima Nova', Arial, Helvetica, sans-serif;
+  text-align: center; /* Center the 'Make a Difference' heading */
+}
+.difference-subheading {
+  color: #003366;
+  font-size: 1.2em;
+  margin-bottom: 32px;
+  font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
+  text-align: center; /* Center the subheading */
+}
+
+/* Story section styles */
+.story-title {
+  color: #ffc907;
+  font-size: 3em;
+  margin-bottom: 16px;
+  font-family: 'Montserrat', 'Proxima Nova', Arial, Helvetica, sans-serif;
+  text-align: center; /* Center the 'Our Story' heading */
+}
+
+/* Center the bottom donate button */
+.story-section .header-donate {
+  display: block;
+  margin: 0 auto 0 auto;
+  text-align: center;
+  font-size: 1.3em; /* Match the top button font size */
+  padding: 18px 38px;
+  max-width: 350px; /* Limit the button width */
+  box-sizing: border-box;
+}
+
 /* Responsive styles for smaller screens */
 @media (max-width: 800px) {
   /* Stack hero text vertically and adjust padding */
@@ -143,27 +215,21 @@ body.loaded .hero-headline, body.loaded .hero-message {
     font-size: 1em;
     padding: 0 10px;
   }
-}
-
-/* Story section styles */
-.story-section {
-  background: #fff7e1; /* Soft yellow background for consistency */
-  padding: 40px 0 40px 0; /* Add space above and below */
-  text-align: center; /* Center the text */
-}
-
-.story-title {
-  color: #ffc907; /* On-brand yellow for the heading */
-  font-size: 3em;
-  margin-bottom: 16px;
-  font-family: 'Montserrat', 'Proxima Nova', Arial, Helvetica, sans-serif;
-}
-
-.story-body {
-  color: #1A1A1A; /* Dark text for readability */
-  font-size: 1.5em;
-  max-width: 600px;
-  margin: 0 auto;
-  line-height: 1.6;
-  font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
+  .impact-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .impact-image {
+    width: 160px;
+    height: 160px;
+  }
+  .impact-body {
+    font-size: 1em;
+    text-align: center;
+  }
+  .impact-subheading {
+    margin: 18px 0 10px 0;
+    text-align: center;
+  }
 }
