@@ -55,7 +55,7 @@ body {
 
 /* Hero Section: use flex to place headline left, message right */
 .hero {
-  background-image: url('/img/licensed-image.jpeg'); /* Changed to local licensed image */
+  background-image: url('img/licensed-image.jpeg'); /* Changed to local licensed image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
